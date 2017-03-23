@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bb-azcopy", "bb-azcopy\bb-a
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bb-azdm", "bb-azdm\bb-azdm.csproj", "{A8C785F3-6F48-417C-92E0-D3279D418B5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bb-netfx", "bb-netfx\bb-netfx.csproj", "{69A51355-4C3C-420F-B6F4-B3207E941981}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A8C785F3-6F48-417C-92E0-D3279D418B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8C785F3-6F48-417C-92E0-D3279D418B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8C785F3-6F48-417C-92E0-D3279D418B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A51355-4C3C-420F-B6F4-B3207E941981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A51355-4C3C-420F-B6F4-B3207E941981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A51355-4C3C-420F-B6F4-B3207E941981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A51355-4C3C-420F-B6F4-B3207E941981}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
