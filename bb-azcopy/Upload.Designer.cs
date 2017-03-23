@@ -42,14 +42,14 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(11, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(20, 24);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 49);
+            this.button1.Size = new System.Drawing.Size(259, 105);
             this.button1.TabIndex = 0;
             this.button1.Text = "Choose file...";
             this.button1.UseVisualStyleBackColor = true;
@@ -57,19 +57,21 @@
             // 
             // textStorageKey
             // 
-            this.textStorageKey.Location = new System.Drawing.Point(156, 26);
-            this.textStorageKey.Margin = new System.Windows.Forms.Padding(2);
+            this.textStorageKey.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textStorageKey.Location = new System.Drawing.Point(286, 56);
+            this.textStorageKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textStorageKey.Name = "textStorageKey";
-            this.textStorageKey.Size = new System.Drawing.Size(467, 20);
+            this.textStorageKey.Size = new System.Drawing.Size(852, 34);
             this.textStorageKey.TabIndex = 2;
             this.textStorageKey.Text = "http://i.jpd.ms/bb-sas-13";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(627, 11);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1149, 24);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 49);
+            this.button2.Size = new System.Drawing.Size(259, 105);
             this.button2.TabIndex = 3;
             this.button2.Text = "Upload";
             this.button2.UseVisualStyleBackColor = true;
@@ -80,22 +82,23 @@
             this.textOutput.AcceptsReturn = true;
             this.textOutput.AcceptsTab = true;
             this.textOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textOutput.Location = new System.Drawing.Point(11, 77);
-            this.textOutput.Margin = new System.Windows.Forms.Padding(2);
+            this.textOutput.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textOutput.Location = new System.Drawing.Point(20, 165);
+            this.textOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textOutput.Multiline = true;
             this.textOutput.Name = "textOutput";
             this.textOutput.ReadOnly = true;
-            this.textOutput.Size = new System.Drawing.Size(757, 403);
+            this.textOutput.Size = new System.Drawing.Size(1386, 866);
             this.textOutput.TabIndex = 4;
             this.textOutput.Text = "leggo";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 62);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(20, 133);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 28);
             this.label1.TabIndex = 5;
             // 
             // timer1
@@ -105,24 +108,27 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 491);
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 1083);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(779, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 26, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1428, 22);
             this.statusStrip1.TabIndex = 6;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // Upload
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 513);
+            this.ClientSize = new System.Drawing.Size(1428, 1105);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textOutput);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textStorageKey);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Upload";
             this.Text = "Form1";
             this.ResumeLayout(false);
