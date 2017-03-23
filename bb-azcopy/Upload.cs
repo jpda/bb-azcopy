@@ -72,6 +72,7 @@ namespace bb_azcopy
                 }
             }
 
+            //BE SURE to use a SAS with a SV (service version) of 2013-08-05 or earlier
             if (a.Exists)
             {
                 statusStrip1.Items.Add($"Starting upload to {blobUrl.ToString()}");
