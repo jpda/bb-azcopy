@@ -47,7 +47,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(20, 24);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(259, 105);
             this.button1.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             this.textStorageKey.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textStorageKey.Location = new System.Drawing.Point(286, 56);
-            this.textStorageKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textStorageKey.Margin = new System.Windows.Forms.Padding(4);
             this.textStorageKey.Name = "textStorageKey";
             this.textStorageKey.Size = new System.Drawing.Size(852, 34);
             this.textStorageKey.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(1149, 24);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(259, 105);
             this.button2.TabIndex = 3;
@@ -84,7 +84,7 @@
             this.textOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textOutput.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textOutput.Location = new System.Drawing.Point(20, 165);
-            this.textOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textOutput.Margin = new System.Windows.Forms.Padding(4);
             this.textOutput.Multiline = true;
             this.textOutput.Name = "textOutput";
             this.textOutput.ReadOnly = true;
@@ -128,7 +128,7 @@
             this.Controls.Add(this.textStorageKey);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Upload";
             this.Text = "Form1";
             this.ResumeLayout(false);

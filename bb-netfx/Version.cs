@@ -1,9 +1,4 @@
 ﻿using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace bb_netfx
 {
@@ -56,7 +51,7 @@ namespace bb_netfx
             const string subkey = @"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\";
             using (var ndpKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey(subkey))
             {
-                if (ndpKey != null && ndpKey.GetValue("Release") != null)
+                if (ndpKey?.GetValue("Release") != null)
                 {
                     return CheckFor45PlusVersion((int)ndpKey.GetValue("Release"));
                 }
