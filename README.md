@@ -17,8 +17,9 @@ The app will attempt to follow and parse a bit.ly shortlink for a SAS, lowering 
 ### Issues
 #### Status reporting and StandardOutput
 It appears AzCopy doesn't call flush() during the transfer - it just backspaces or does other things, but `BeginOpenReadLine()` doesn't get data until the transfer ends (presumably because no lines are flushed until the transfer is complete). Currently the app is set to show the azcopy window when it opens to report status to the user since `StandardOutput` redirects successfully but is largely unusable. There are some attempts to read the streams in different fashions in the code.
-## To-do
-Error handling isn't terribly robust. I haven't written apps in winforms in a long time so some of my patterns and practices may be bit rusty.
 
 ## [bb-azdm](https://github.com/jpda/bb-azcopy/tree/master/bb-azdm) - barebones winforms using Azure Data Movement libraries
 AzCopy is underpinned by the Azure Data Movement libraries, so it makes sense to try it here. This simple app uses the libraries to upload data to blob storage, using the SAS to get a container reference, create a file and report progress back. Requires .net 4.5.
+
+## To-do
+Error handling isn't terribly robust. I haven't written apps in winforms in a long time so some of my patterns and practices may be bit rusty.
