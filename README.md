@@ -11,7 +11,7 @@ The winforms app is .net 4.0 Client, the minimum installable flavor of .net 4.0 
 
 ### Additions
 #### SAS blob URIs
-The app expects a SAS blob. This is mostly due to customer requirements. There is a SAS versioning requirement when working with AzCopy 2.2.2 in particular. Tested versions for the `sv` parameter are currently `2013-08-05`.
+The app expects a container SAS URI with a minimum of write. This is mostly due to customer requirements. There is a versioning requirement when working with AzCopy 2.2.2 in particular - the `api-version` or `sv` parameters that dictate the targeted service version don't appear to work with 2.2.2 except for specific versions. Tested versions for the `sv` parameter are currently `2013-08-05`.
 #### Short links
 The app will attempt to follow and parse a bit.ly shortlink for a SAS, lowering the customer data-entry requirements slightly
 ### Issues
@@ -21,4 +21,4 @@ It appears AzCopy doesn't call flush() during the transfer - it just backspaces 
 Error handling isn't terribly robust. I haven't written apps in winforms in a long time so some of my patterns and practices may be bit rusty.
 
 ## [bb-azdm](https://github.com/jpda/bb-azcopy/tree/master/bb-azdm) - barebones winforms using Azure Data Movement libraries
-AzCopy is underpinned by the Azure Data Movement libraries, so it makes sense to try it here. This simple app uses the SAS to get a container reference, creates a file and starts uploading, reporting progress back. Requires .net 4.5.
+AzCopy is underpinned by the Azure Data Movement libraries, so it makes sense to try it here. This simple app uses the libraries to upload data to blob storage, using the SAS to get a container reference, create a file and report progress back. Requires .net 4.5.
